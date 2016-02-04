@@ -262,6 +262,7 @@ Santiago Pelufo, @spelufo, 2015/12/18
 Matthew Lauber, @mklauber, 2015/11/13
 
 Matthew DeAbreu, @mdeabreu, 2016/01/05
+<<<<<<< HEAD
 
 Cameron Fischer, @flibbles, 2016/01/08
 
@@ -270,3 +271,8 @@ Jim, @ARRRRGH, 2016/01/11
 Koke Laast, @Koke24, 2016/01/27
 
 Thomas Elmiger, @telmiger, 2016/02/02
+||||||| merged common ancestors
+=======
+
+Cameron Fischer, @flibbles, 2016/01/08
+>>>>>>> backgroundImageHandling
