@@ -5,6 +5,8 @@ Body/Hint: 서식, 그림, 및 동적 기능을 추가하려면 [[위키 텍스�
 Body/Placeholder: 이 티들러에 대한 텍스트를 입력하세요
 Body/Preview/Button/Hide: 미리 보기 숨기기
 Body/Preview/Button/Show: 미리 보기 보이기
+Body/Preview/Type: 미리 보기 형식:
+Body/Preview/Type/Output: 출력
 Field/Remove/Caption: 필드 제거
 Field/Remove/Hint: 필드를 제거합니다
 Fields/Add/Button: 추가
@@ -19,6 +21,7 @@ Tags/Add/Button: 추가
 Tags/Add/Placeholder: 태그 이름
 Tags/Dropdown/Caption: 태그 목록
 Tags/Dropdown/Hint: 태그 목록을 보여줍니다
+Title/BadCharacterWarning: 경고: 티들러 제목에 문자 <<bad-chars>> 의 사용은 피하십시오
 Type/Delete/Caption: 내용 형식 삭제
 Type/Delete/Hint: 내용 형식을 삭제합니다
 Type/Dropdown/Caption: 내용 형식 목록

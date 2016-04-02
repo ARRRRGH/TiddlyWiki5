@@ -272,6 +272,7 @@ Jim, @ARRRRGH, 2016/01/11
 Koke Laast, @Koke24, 2016/01/27
 
 Thomas Elmiger, @telmiger, 2016/02/02
+<<<<<<< HEAD
 ||||||| merged common ancestors
 =======
 
@@ -286,3 +287,14 @@ Thomas Elmiger, @telmiger, 2016/02/02
 Cameron Fischer, @flibbles, 2016/01/08
 >>>>>>> backgroundImageHandling
 >>>>>>> origin/master
+||||||| merged common ancestors
+=======
+
+Richard Rath @rcrath 2016/02/12
+
+Eric Drechsel @edrex 2016/02/15
+
+@FND 2016/02/27
+
+Cengizhan Kurt, @webninjasi, 2016/03/03
+>>>>>>> Jermolene/master

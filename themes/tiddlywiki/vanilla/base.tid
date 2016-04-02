@@ -704,7 +704,7 @@ button.tc-untagged-label {
 <<if-no-sidebar "
 
 	.tc-story-river {
-		width: auto;
+        width: calc(100% - {{$:/themes/tiddlywiki/vanilla/metrics/storyleft}});
 	}
 
 ">>
@@ -1545,8 +1545,6 @@ html body.tc-body.tc-single-tiddler-window {
 }
 
 .tc-sidebar-lists .tc-tab-buttons button {
-	display: inline;
-	width: auto;
 	background-color: <<colour sidebar-tab-background>>;
 	color: <<colour sidebar-tab-foreground>>;
 	border-left: 1px solid <<colour sidebar-tab-border>>;
