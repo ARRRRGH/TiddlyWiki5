@@ -297,4 +297,12 @@ Eric Drechsel @edrex 2016/02/15
 @FND 2016/02/27
 
 Cengizhan Kurt, @webninjasi, 2016/03/03
+<<<<<<< HEAD
+>>>>>>> Jermolene/master
+||||||| merged common ancestors
+=======
+
+Knut Franke, @nome, 2016/03/20
+
+Pau Deluca, @PauDeLuca, 2016/04/11
 >>>>>>> Jermolene/master
