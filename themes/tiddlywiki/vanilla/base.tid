@@ -145,6 +145,11 @@ svg.tc-image-button {
 	padding: 0px 1px 1px 0px;
 }
 
+.tc-icon-wrapper > svg {
+	width: 1em;
+	height: 1em;
+}
+
 kbd {
 	display: inline-block;
 	padding: 3px 5px;
@@ -278,6 +283,8 @@ a.tc-tiddlylink-external:hover {
 
 .tc-tiddler-dragger-inner {
 	position: absolute;
+	top: -1000px;
+	left: -1000px;
 	display: inline-block;
 	padding: 8px 20px;
 	font-size: 16.9px;
@@ -310,6 +317,19 @@ a.tc-tiddlylink-external:hover {
 	background: <<colour dropzone-background>>;
 	text-align: center;
 	content: "<<lingo DropMessage>>";
+}
+
+.tc-droppable > .tc-droppable-placeholder {
+	display: none;
+}
+
+.tc-droppable.tc-dragover > .tc-droppable-placeholder {
+	display: block;
+	border: 2px dashed <<colour dropzone-background>>;
+}
+
+.tc-draggable {
+	cursor: move;
 }
 
 /*
@@ -930,6 +950,7 @@ button.tc-untagged-label {
 .tc-tiddler-frame iframe.tc-edit-texteditor {
 	padding: 3px 3px 3px 3px;
 	border: 1px solid <<colour tiddler-editor-border>>;
+	background-color: <<colour tiddler-editor-background>>;
 	line-height: 1.3em;
 	-webkit-appearance: none;
 }
@@ -941,10 +962,6 @@ button.tc-untagged-label {
 	padding: 3em 3em 6em 3em;
 	background: <<colour alert-background>>;
 	border: 1px solid <<colour alert-border>>;
-}
-
-.tc-tiddler-frame input.tc-edit-texteditor {
-	background-color: <<colour tiddler-editor-background>>;
 }
 
 canvas.tc-edit-bitmapeditor  {

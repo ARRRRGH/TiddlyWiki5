@@ -641,10 +641,10 @@ exports.getTiddlerDataCached = function(titleOrTiddler,defaultData) {
 	if(tiddler) {
 		return this.getCacheForTiddler(tiddler.fields.title,"data",function() {
 			// Return the frozen value
-			var value = self.getTiddlerData(tiddler.fields.title,defaultData);
+			var value = self.getTiddlerData(tiddler.fields.title,undefined);
 			$tw.utils.deepFreeze(value);
 			return value;
-		});
+		}) || defaultData;
 	} else {
 		return defaultData;
 	}
@@ -680,7 +680,7 @@ exports.getTiddlerData = function(titleOrTiddler,defaultData) {
 Extract an indexed field from within a data tiddler
 */
 exports.extractTiddlerDataItem = function(titleOrTiddler,index,defaultText) {
-	var data = this.getTiddlerData(titleOrTiddler,Object.create(null)),
+	var data = this.getTiddlerDataCached(titleOrTiddler,Object.create(null)),
 		text;
 	if(data && $tw.utils.hop(data,index)) {
 		text = data[index];
@@ -1105,6 +1105,22 @@ exports.getTiddlerText = function(title,defaultText) {
 		return null;
 	}
 };
+
+/*
+Check whether the text of a tiddler matches a given value. By default, the comparison is case insensitive, and any spaces at either end of the tiddler text is trimmed
+*/
+exports.checkTiddlerText = function(title,targetText,options) {
+	options = options || {};
+	var text = this.getTiddlerText(title,"");
+	if(!options.noTrim) {
+		text = text.trim();
+	}
+	if(!options.caseSensitive) {
+		text = text.toLowerCase();
+		targetText = targetText.toLowerCase();
+	}
+	return text === targetText;
+}
 
 /*
 Read an array of browser File objects, invoking callback(tiddlerFieldsArray) once they're all read
